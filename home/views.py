@@ -67,6 +67,7 @@ class AuthorList(ListAPIView):
 
 
 class AuthorCreate(CreateAPIView):
+    permission_classes = [AllowAny]
     serializer_class = AuthorSerializer
 
 
